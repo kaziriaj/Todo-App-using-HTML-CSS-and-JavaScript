@@ -36,7 +36,7 @@ function addTask() {
 
   // View Task by alert
   viewTask.addEventListener("click", () => {
-    const textNode = leftDiv.childNodes[1]; // checkbox এর পরের টেক্সট
+    const textNode = leftDiv.childNodes[1];
     const taskText = textNode.nodeValue.trim();
     alert(taskText);
   });
