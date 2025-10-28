@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My ToDo List JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>
+      <i
+        class="fa-solid fa-list-check"
+        style="
+          color: #d2d2de;
+          border-radius: 8px;
+          background-color: #fff;
+          box-shadow: 1px 2px 3px 4px;
+          padding: 5px;
+        "
+      ></i>
+      TO DO APP
+    </h1>
+
+    <input
+      type="text"
+      id="taskInput"
+      placeholder="type your task here....."
+      required
+    />
+    <button id="addTask">Add Task</button>
+
+    <ul id="tasklist">
+      <!-- <li>
+        <div class="left"></div>
+        <div class="right"><button>Edit</button> <button>Delete</button></div>
+      </li> -->
+    </ul>
+
+    <!-- <script>
+      const form = document.getElementById("todo-form");
+      const input = document.getElementById("todo-input");
+      const list = document.getElementById("todo-list");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const task = input.value.trim();
+        if (task !== "") {
+          const li = document.createElement("li");
+          li.textContent = task;
+          list.appendChild(li);
+          input.value = "";
+        }
+      });
+    </script> -->
+    <script src="./scrtip.js"></script>
+  </body>
+</html>
